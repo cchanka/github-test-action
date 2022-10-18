@@ -1,0 +1,11 @@
+name: 'Test'
+description: 'Test Action'
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo "Running from the action - cchanka/github-test-action..."
+        date
+        echo 'Testing'
+      shell: bash
